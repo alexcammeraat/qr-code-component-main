@@ -1,0 +1,74 @@
+
+html{
+    /* 62.5% of 16px = 10px for easy convert to rem units */
+    font-size: 62.5%;
+    background: var(--colour-light-Gray);
+}
+
+:root{
+    --colour-headings: hsl(218, 44%, 22%) ;
+    --colour-white: hsl(0, 0%, 100%);
+    --colour-light-Gray: hsl(212, 45%, 89%);
+    --colour-grayish-blue: hsl(220, 15%, 55%);
+    --colour-light-Blue: hsl(228, 45%, 44%);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    color: var(--colour-headings);
+    margin-bottom: 1rem; /*removes default */
+
+}
+
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+p{
+    margin-top: 0;
+}
+
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+img, picture, svg, video{ /* used to make all these elements responsive*/
+    display: block;
+    max-width: 100%;
+}
+button{
+    outline-color: transparent; /*Hides the defualt outline on buttons even when changed to High contrast style browser */
+}
+
+
+.card{
+    
+    border-radius: 20px;
+    background: var(--colour-white);
+    overflow: hidden;
+    min-width: 300px;
+    width: 390px;
+    padding: 2rem;
+    margin: auto;
+}
+
+.QR_content{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--colour-grayish-blue);
+}
+.QR_heading{
+    margin-top: 3rem;
+}
+.QR_img{
+    border-radius: 15px;
+}
